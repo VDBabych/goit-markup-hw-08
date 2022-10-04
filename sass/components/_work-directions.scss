@@ -1,0 +1,41 @@
+.work-directions {
+    padding-top: 0;
+}
+
+.work-directions__title {
+    margin-bottom: 50px;
+}
+
+.work-directions__list {
+    display: flex;
+}
+
+.work-directions__item {
+    position: relative;
+    height: 294px;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.work-directions__image {
+    min-width: 100%;
+    height: auto;
+}
+
+.work-directions__subtitle {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(47, 48, 58, 0.8);
+    ;
+    padding: 27px 10px;
+
+    font-size: 14px;
+    line-height: calc(16/14);
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+}

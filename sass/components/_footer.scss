@@ -1,0 +1,44 @@
+.footer {
+    padding-bottom: 60px;
+    padding-top: 60px;
+
+    background-color: var(--secondary-bg-color);
+}
+
+.footer__container {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer__logo {
+    margin-bottom: 20px;
+
+    color: var(--primary-white-color);
+}
+
+.footer__socials-part {
+    margin-left: 70px;
+}
+
+.footer__socials-part-text {
+    margin-bottom: 20px;
+
+    color: var(--primary-white-color);
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.footer-socials__link {
+    background-color: var(--icon-dark-color);
+}
+
+.footer-socials__icon {
+    fill: var(--primary-white-color);
+    transition: none;
+}
