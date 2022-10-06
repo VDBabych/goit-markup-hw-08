@@ -1,12 +1,17 @@
 .header {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-bottom: 1px solid;
     border-color: var(--border-color);
 
-    @include mq(tab-only) {
+    @include mq(tab) {
         padding-top: 21px;
         padding-bottom: 20px;
+    }
+
+    @include mq(desk) {
+        padding-top: 25px;
+        padding-bottom: 25px;
     }
 }
 
