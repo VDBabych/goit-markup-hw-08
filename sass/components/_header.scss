@@ -35,9 +35,10 @@
     display: flex;
 
 
-    @media screen and (max-width: 767px) {
+    @include mq(mob-only) {
         display: none;
     }
+    
     @media screen and (min-width: 768px) {
         flex-direction: column;
         gap: 10px;
