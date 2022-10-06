@@ -1,5 +1,9 @@
 .work-directions {
     padding-top: 0;
+
+    @include mq(not-desk) {
+        display: none;
+    }
 }
 
 .work-directions__title {

@@ -1,9 +1,11 @@
 @import 'utils/variables';
 @import 'utils/common-styles';
+@import 'utils/mixins';
 
 @import 'components/header';
 @import 'components/logo';
 @import 'components/main-nav';
+@import 'components/mobile-menu';
 @import 'components/socials';
 @import 'components/footer';
 @import 'components/address';

@@ -118,6 +118,10 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+
+    @include mq(not-desk) {
+        font-size: 12px;
+    }
 }
 
 .agreement-link {
@@ -125,6 +129,7 @@
 }
 
 .checkbox-icon {
+    flex-shrink: 0;
     width: 16px;
     height: 16px;
 

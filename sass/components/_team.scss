@@ -3,11 +3,18 @@
 }
 
 .team__title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
+    @include mq(desk) {
+        margin-bottom: 50px;
+    }
 }
 
 .team__list {
     display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .team__card {
@@ -15,17 +22,29 @@
     border: 1px transparent;
     border-radius: 0px 0px 4px 4px;
 
-    &:not(:last-child) {
-        margin-right: 30px;
+    @include mq(mob) {
+        width: 450px;
+    }
+
+    @include mq(tab) {
+        width: 354px;
+    }
+
+    @include mq(desk) {
+        width: 270px;
     }
 }
 
 .team__wrap {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 24px;
     background-color: var(--primary-white-color);
     border: 1px transparent;
     border-radius: 0px 0px 4px 4px;
+
+    @include mq(desk) {
+        padding-bottom: 30px;
+    }
 }
 
 .team__subtitle {

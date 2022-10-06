@@ -3,6 +3,11 @@
     padding-bottom: 25px;
     border-bottom: 1px solid;
     border-color: var(--border-color);
+
+    @include mq(tab-only) {
+        padding-top: 21px;
+        padding-bottom: 20px;
+    }
 }
 
 .header__container {
@@ -11,13 +16,32 @@
 }
 
 .header__logo {
-    margin-right: 93px;
+    @include mq(tab) {
+        margin-right: 87px;
+    }
+
+    @include mq(desk) {
+        margin-right: 93px;
+    }    
 }
 
 .header__contacts-list {
     margin-left: auto;
     display: flex;
-    gap: 50px;
+
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+    @media screen and (min-width: 768px) {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        gap: 50px;
+    }
 }
 
 .header__contacts-link {
@@ -36,6 +60,11 @@
     &:hover,
     &:focus {
         color: var(--accent-color);
+    }
+
+    @include mq(tab-only) {
+        font-size: 12px;
+        line-height: calc(14/12);
     }
 }
 
